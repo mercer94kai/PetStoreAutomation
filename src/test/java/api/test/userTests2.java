@@ -55,7 +55,7 @@ public class userTests2 {
     @Test(priority = 2)
     public void readUserByNameTest() throws InterruptedException {
 
-        Thread.sleep(5000);
+
         logger.info("\n   **Executing Get User Data Scenario...................\n ");
 
         Response response=userEndpoints2.readUser(this.userPayload.getUsername());
