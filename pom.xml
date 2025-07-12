@@ -99,6 +99,12 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/test/resources</directory>
+            </resource>
+        </resources>
+
         <pluginManagement>
             <plugins>
                 <plugin>

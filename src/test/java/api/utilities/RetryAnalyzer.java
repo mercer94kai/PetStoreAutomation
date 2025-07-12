@@ -12,7 +12,7 @@ public class RetryAnalyzer implements IRetryAnalyzer {
 
         if(retryCount<maxretryCount){
             retryCount++;
-            System.out.println("Retrying "+result.getName()+" | Retry Count: "+retryCount );
+            System.out.println("\nRetrying "+result.getName()+" | Retry Count: "+retryCount +"\n");
             return true;
         }
 
