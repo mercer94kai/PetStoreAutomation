@@ -2,6 +2,7 @@ package api.test;
 
 import api.endpoints.userEndpoints2;
 import api.payload.user;
+import api.utilities.RetryAnalyzer;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.github.javafaker.Faker;
 import io.restassured.response.Response;
@@ -52,7 +53,7 @@ public class userTests2 {
 
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2, retryAnalyzer = RetryAnalyzer.class)
     public void readUserByNameTest() throws InterruptedException {
 
 
